@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.39
 #### Initializers <a name="Initializers" id="@cdktf/provider-acme.dataAcmeServerUrl.DataAcmeServerUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-acme-go/acme/dataacmeserverurl"
+import "github.com/cdktf/cdktf-provider-acme-go/acme/v12/dataacmeserverurl"
 
 dataacmeserverurl.NewDataAcmeServerUrl(scope Construct, id *string, config DataAcmeServerUrlConfig) DataAcmeServerUrl
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-acme.dataAcmeServerUrl.DataAcmeServerUrl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-acme-go/acme/dataacmeserverurl"
+import "github.com/cdktf/cdktf-provider-acme-go/acme/v12/dataacmeserverurl"
 
 dataacmeserverurl.DataAcmeServerUrl_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-acme.dataAcmeServerUrl.DataAcmeServerUrl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-acme-go/acme/dataacmeserverurl"
+import "github.com/cdktf/cdktf-provider-acme-go/acme/v12/dataacmeserverurl"
 
 dataacmeserverurl.DataAcmeServerUrl_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataacmeserverurl.DataAcmeServerUrl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-acme.dataAcmeServerUrl.DataAcmeServerUrl.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-acme-go/acme/dataacmeserverurl"
+import "github.com/cdktf/cdktf-provider-acme-go/acme/v12/dataacmeserverurl"
 
 dataacmeserverurl.DataAcmeServerUrl_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataacmeserverurl.DataAcmeServerUrl_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-acme.dataAcmeServerUrl.DataAcmeServerUrl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-acme-go/acme/dataacmeserverurl"
+import "github.com/cdktf/cdktf-provider-acme-go/acme/v12/dataacmeserverurl"
 
 dataacmeserverurl.DataAcmeServerUrl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-acme.dataAcmeServerUrl.DataAcmeServerUrlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-acme-go/acme/dataacmeserverurl"
+import "github.com/cdktf/cdktf-provider-acme-go/acme/v12/dataacmeserverurl"
 
 &dataacmeserverurl.DataAcmeServerUrlConfig {
 	Connection: interface{},
