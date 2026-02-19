@@ -1,33 +1,33 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs
+// https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
 export interface AcmeProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs#server_url AcmeProvider#server_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs#server_url AcmeProvider#server_url}
   */
   readonly serverUrl: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs#alias AcmeProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs#alias AcmeProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs acme}
+* Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs acme}
 */
-export class AcmeProvider extends cdktf.TerraformProvider {
+export class AcmeProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -38,14 +38,14 @@ export class AcmeProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AcmeProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AcmeProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AcmeProvider to import
-  * @param importFromId The id of the existing AcmeProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AcmeProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AcmeProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "acme", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "acme", importId: importFromId, provider });
       }
 
   // ===========
@@ -53,7 +53,7 @@ export class AcmeProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs acme} Resource
+  * Create a new {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs acme} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class AcmeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'acme',
       terraformGeneratorMetadata: {
         providerName: 'acme',
-        providerVersion: '2.39.0',
+        providerVersion: '2.44.1',
         providerVersionConstraint: '~> 2.10'
       },
       terraformProviderSource: 'vancluever/acme'
@@ -112,21 +112,21 @@ export class AcmeProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      server_url: cdktf.stringToTerraform(this._serverUrl),
-      alias: cdktf.stringToTerraform(this._alias),
+      server_url: cdktn.stringToTerraform(this._serverUrl),
+      alias: cdktn.stringToTerraform(this._alias),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       server_url: {
-        value: cdktf.stringToHclTerraform(this._serverUrl),
+        value: cdktn.stringToHclTerraform(this._serverUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

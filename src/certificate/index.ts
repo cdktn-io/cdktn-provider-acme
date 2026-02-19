@@ -1,174 +1,190 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate
+// https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CertificateConfig extends cdktf.TerraformMetaArguments {
+export interface CertificateConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#account_key_pem Certificate#account_key_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#account_key_pem Certificate#account_key_pem}
   */
   readonly accountKeyPem: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#cert_timeout Certificate#cert_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#cert_timeout Certificate#cert_timeout}
   */
   readonly certTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#certificate_p12_password Certificate#certificate_p12_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#certificate_p12_password Certificate#certificate_p12_password}
   */
   readonly certificateP12Password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#certificate_request_pem Certificate#certificate_request_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#certificate_request_pem Certificate#certificate_request_pem}
   */
   readonly certificateRequestPem?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#common_name Certificate#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#common_name Certificate#common_name}
   */
   readonly commonName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#disable_complete_propagation Certificate#disable_complete_propagation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#deactivate_authorizations Certificate#deactivate_authorizations}
   */
-  readonly disableCompletePropagation?: boolean | cdktf.IResolvable;
+  readonly deactivateAuthorizations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#id Certificate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#disable_complete_propagation Certificate#disable_complete_propagation}
+  */
+  readonly disableCompletePropagation?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#id Certificate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#key_type Certificate#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#key_type Certificate#key_type}
   */
   readonly keyType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#min_days_remaining Certificate#min_days_remaining}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#min_days_dynamic Certificate#min_days_dynamic}
+  */
+  readonly minDaysDynamic?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#min_days_remaining Certificate#min_days_remaining}
   */
   readonly minDaysRemaining?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#must_staple Certificate#must_staple}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#must_staple Certificate#must_staple}
   */
-  readonly mustStaple?: boolean | cdktf.IResolvable;
+  readonly mustStaple?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#pre_check_delay Certificate#pre_check_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#pre_check_delay Certificate#pre_check_delay}
   */
   readonly preCheckDelay?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#preferred_chain Certificate#preferred_chain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#preferred_chain Certificate#preferred_chain}
   */
   readonly preferredChain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#profile Certificate#profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#profile Certificate#profile}
   */
   readonly profile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#recursive_nameservers Certificate#recursive_nameservers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#propagation_wait Certificate#propagation_wait}
+  */
+  readonly propagationWait?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#recursive_nameservers Certificate#recursive_nameservers}
   */
   readonly recursiveNameservers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#renewal_info_ignore_retry_after Certificate#renewal_info_ignore_retry_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#renewal_info_ignore_retry_after Certificate#renewal_info_ignore_retry_after}
   */
-  readonly renewalInfoIgnoreRetryAfter?: boolean | cdktf.IResolvable;
+  readonly renewalInfoIgnoreRetryAfter?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#renewal_info_max_sleep Certificate#renewal_info_max_sleep}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#renewal_info_max_sleep Certificate#renewal_info_max_sleep}
   */
   readonly renewalInfoMaxSleep?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#revoke_certificate_on_destroy Certificate#revoke_certificate_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#revoke_certificate_on_destroy Certificate#revoke_certificate_on_destroy}
   */
-  readonly revokeCertificateOnDestroy?: boolean | cdktf.IResolvable;
+  readonly revokeCertificateOnDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#revoke_certificate_reason Certificate#revoke_certificate_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#revoke_certificate_reason Certificate#revoke_certificate_reason}
   */
   readonly revokeCertificateReason?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#subject_alternative_names Certificate#subject_alternative_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#subject_alternative_names Certificate#subject_alternative_names}
   */
   readonly subjectAlternativeNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#use_renewal_info Certificate#use_renewal_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#use_renewal_info Certificate#use_renewal_info}
   */
-  readonly useRenewalInfo?: boolean | cdktf.IResolvable;
+  readonly useRenewalInfo?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#validity_days Certificate#validity_days}
+  */
+  readonly validityDays?: number;
   /**
   * dns_challenge block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#dns_challenge Certificate#dns_challenge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#dns_challenge Certificate#dns_challenge}
   */
-  readonly dnsChallenge?: CertificateDnsChallenge[] | cdktf.IResolvable;
+  readonly dnsChallenge?: CertificateDnsChallenge[] | cdktn.IResolvable;
   /**
   * http_challenge block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#http_challenge Certificate#http_challenge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#http_challenge Certificate#http_challenge}
   */
   readonly httpChallenge?: CertificateHttpChallenge;
   /**
   * http_memcached_challenge block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#http_memcached_challenge Certificate#http_memcached_challenge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#http_memcached_challenge Certificate#http_memcached_challenge}
   */
   readonly httpMemcachedChallenge?: CertificateHttpMemcachedChallenge;
   /**
   * http_s3_challenge block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#http_s3_challenge Certificate#http_s3_challenge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#http_s3_challenge Certificate#http_s3_challenge}
   */
   readonly httpS3Challenge?: CertificateHttpS3Challenge;
   /**
   * http_webroot_challenge block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#http_webroot_challenge Certificate#http_webroot_challenge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#http_webroot_challenge Certificate#http_webroot_challenge}
   */
   readonly httpWebrootChallenge?: CertificateHttpWebrootChallenge;
   /**
   * tls_challenge block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#tls_challenge Certificate#tls_challenge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#tls_challenge Certificate#tls_challenge}
   */
   readonly tlsChallenge?: CertificateTlsChallenge;
 }
 export interface CertificateDnsChallenge {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#config Certificate#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#config Certificate#config}
   */
   readonly config?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#provider Certificate#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#provider Certificate#provider}
   */
   readonly provider: string;
 }
 
-export function certificateDnsChallengeToTerraform(struct?: CertificateDnsChallenge | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certificateDnsChallengeToTerraform(struct?: CertificateDnsChallenge | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    config: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.config),
-    provider: cdktf.stringToTerraform(struct!.provider),
+    config: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.config),
+    provider: cdktn.stringToTerraform(struct!.provider),
   }
 }
 
 
-export function certificateDnsChallengeToHclTerraform(struct?: CertificateDnsChallenge | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certificateDnsChallengeToHclTerraform(struct?: CertificateDnsChallenge | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     config: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.config),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.config),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     provider: {
-      value: cdktf.stringToHclTerraform(struct!.provider),
+      value: cdktn.stringToHclTerraform(struct!.provider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -179,9 +195,9 @@ export function certificateDnsChallengeToHclTerraform(struct?: CertificateDnsCha
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertificateDnsChallengeOutputReference extends cdktf.ComplexObject {
+export class CertificateDnsChallengeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -189,11 +205,11 @@ export class CertificateDnsChallengeOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CertificateDnsChallenge | cdktf.IResolvable | undefined {
+  public get internalValue(): CertificateDnsChallenge | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -210,14 +226,14 @@ export class CertificateDnsChallengeOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CertificateDnsChallenge | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CertificateDnsChallenge | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._config = undefined;
       this._provider = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,15 +275,15 @@ export class CertificateDnsChallengeOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class CertificateDnsChallengeList extends cdktf.ComplexList {
-  public internalValue? : CertificateDnsChallenge[] | cdktf.IResolvable
+export class CertificateDnsChallengeList extends cdktn.ComplexList {
+  public internalValue? : CertificateDnsChallenge[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -280,41 +296,41 @@ export class CertificateDnsChallengeList extends cdktf.ComplexList {
 }
 export interface CertificateHttpChallenge {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#port Certificate#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#port Certificate#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#proxy_header Certificate#proxy_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#proxy_header Certificate#proxy_header}
   */
   readonly proxyHeader?: string;
 }
 
 export function certificateHttpChallengeToTerraform(struct?: CertificateHttpChallengeOutputReference | CertificateHttpChallenge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
-    proxy_header: cdktf.stringToTerraform(struct!.proxyHeader),
+    port: cdktn.numberToTerraform(struct!.port),
+    proxy_header: cdktn.stringToTerraform(struct!.proxyHeader),
   }
 }
 
 
 export function certificateHttpChallengeToHclTerraform(struct?: CertificateHttpChallengeOutputReference | CertificateHttpChallenge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     proxy_header: {
-      value: cdktf.stringToHclTerraform(struct!.proxyHeader),
+      value: cdktn.stringToHclTerraform(struct!.proxyHeader),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -325,14 +341,14 @@ export function certificateHttpChallengeToHclTerraform(struct?: CertificateHttpC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertificateHttpChallengeOutputReference extends cdktf.ComplexObject {
+export class CertificateHttpChallengeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -397,30 +413,30 @@ export class CertificateHttpChallengeOutputReference extends cdktf.ComplexObject
 }
 export interface CertificateHttpMemcachedChallenge {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#hosts Certificate#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#hosts Certificate#hosts}
   */
   readonly hosts: string[];
 }
 
 export function certificateHttpMemcachedChallengeToTerraform(struct?: CertificateHttpMemcachedChallengeOutputReference | CertificateHttpMemcachedChallenge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hosts),
+    hosts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.hosts),
   }
 }
 
 
 export function certificateHttpMemcachedChallengeToHclTerraform(struct?: CertificateHttpMemcachedChallengeOutputReference | CertificateHttpMemcachedChallenge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hosts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.hosts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.hosts),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -431,14 +447,14 @@ export function certificateHttpMemcachedChallengeToHclTerraform(struct?: Certifi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertificateHttpMemcachedChallengeOutputReference extends cdktf.ComplexObject {
+export class CertificateHttpMemcachedChallengeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -466,7 +482,7 @@ export class CertificateHttpMemcachedChallengeOutputReference extends cdktf.Comp
   // hosts - computed: false, optional: false, required: true
   private _hosts?: string[]; 
   public get hosts() {
-    return cdktf.Fn.tolist(this.getListAttribute('hosts'));
+    return cdktn.Fn.tolist(this.getListAttribute('hosts'));
   }
   public set hosts(value: string[]) {
     this._hosts = value;
@@ -478,30 +494,30 @@ export class CertificateHttpMemcachedChallengeOutputReference extends cdktf.Comp
 }
 export interface CertificateHttpS3Challenge {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#s3_bucket Certificate#s3_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#s3_bucket Certificate#s3_bucket}
   */
   readonly s3Bucket: string;
 }
 
 export function certificateHttpS3ChallengeToTerraform(struct?: CertificateHttpS3ChallengeOutputReference | CertificateHttpS3Challenge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    s3_bucket: cdktf.stringToTerraform(struct!.s3Bucket),
+    s3_bucket: cdktn.stringToTerraform(struct!.s3Bucket),
   }
 }
 
 
 export function certificateHttpS3ChallengeToHclTerraform(struct?: CertificateHttpS3ChallengeOutputReference | CertificateHttpS3Challenge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     s3_bucket: {
-      value: cdktf.stringToHclTerraform(struct!.s3Bucket),
+      value: cdktn.stringToHclTerraform(struct!.s3Bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -512,14 +528,14 @@ export function certificateHttpS3ChallengeToHclTerraform(struct?: CertificateHtt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertificateHttpS3ChallengeOutputReference extends cdktf.ComplexObject {
+export class CertificateHttpS3ChallengeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -559,30 +575,30 @@ export class CertificateHttpS3ChallengeOutputReference extends cdktf.ComplexObje
 }
 export interface CertificateHttpWebrootChallenge {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#directory Certificate#directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#directory Certificate#directory}
   */
   readonly directory: string;
 }
 
 export function certificateHttpWebrootChallengeToTerraform(struct?: CertificateHttpWebrootChallengeOutputReference | CertificateHttpWebrootChallenge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    directory: cdktf.stringToTerraform(struct!.directory),
+    directory: cdktn.stringToTerraform(struct!.directory),
   }
 }
 
 
 export function certificateHttpWebrootChallengeToHclTerraform(struct?: CertificateHttpWebrootChallengeOutputReference | CertificateHttpWebrootChallenge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     directory: {
-      value: cdktf.stringToHclTerraform(struct!.directory),
+      value: cdktn.stringToHclTerraform(struct!.directory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -593,14 +609,14 @@ export function certificateHttpWebrootChallengeToHclTerraform(struct?: Certifica
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertificateHttpWebrootChallengeOutputReference extends cdktf.ComplexObject {
+export class CertificateHttpWebrootChallengeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -640,30 +656,30 @@ export class CertificateHttpWebrootChallengeOutputReference extends cdktf.Comple
 }
 export interface CertificateTlsChallenge {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#port Certificate#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#port Certificate#port}
   */
   readonly port?: number;
 }
 
 export function certificateTlsChallengeToTerraform(struct?: CertificateTlsChallengeOutputReference | CertificateTlsChallenge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function certificateTlsChallengeToHclTerraform(struct?: CertificateTlsChallengeOutputReference | CertificateTlsChallenge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -674,14 +690,14 @@ export function certificateTlsChallengeToHclTerraform(struct?: CertificateTlsCha
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertificateTlsChallengeOutputReference extends cdktf.ComplexObject {
+export class CertificateTlsChallengeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -724,9 +740,9 @@ export class CertificateTlsChallengeOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate acme_certificate}
+* Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate acme_certificate}
 */
-export class Certificate extends cdktf.TerraformResource {
+export class Certificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -737,14 +753,14 @@ export class Certificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Certificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Certificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Certificate to import
-  * @param importFromId The id of the existing Certificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Certificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Certificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "acme_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "acme_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -752,7 +768,7 @@ export class Certificate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/certificate acme_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/certificate acme_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -763,7 +779,7 @@ export class Certificate extends cdktf.TerraformResource {
       terraformResourceType: 'acme_certificate',
       terraformGeneratorMetadata: {
         providerName: 'acme',
-        providerVersion: '2.39.0',
+        providerVersion: '2.44.1',
         providerVersionConstraint: '~> 2.10'
       },
       provider: config.provider,
@@ -779,14 +795,17 @@ export class Certificate extends cdktf.TerraformResource {
     this._certificateP12Password = config.certificateP12Password;
     this._certificateRequestPem = config.certificateRequestPem;
     this._commonName = config.commonName;
+    this._deactivateAuthorizations = config.deactivateAuthorizations;
     this._disableCompletePropagation = config.disableCompletePropagation;
     this._id = config.id;
     this._keyType = config.keyType;
+    this._minDaysDynamic = config.minDaysDynamic;
     this._minDaysRemaining = config.minDaysRemaining;
     this._mustStaple = config.mustStaple;
     this._preCheckDelay = config.preCheckDelay;
     this._preferredChain = config.preferredChain;
     this._profile = config.profile;
+    this._propagationWait = config.propagationWait;
     this._recursiveNameservers = config.recursiveNameservers;
     this._renewalInfoIgnoreRetryAfter = config.renewalInfoIgnoreRetryAfter;
     this._renewalInfoMaxSleep = config.renewalInfoMaxSleep;
@@ -794,6 +813,7 @@ export class Certificate extends cdktf.TerraformResource {
     this._revokeCertificateReason = config.revokeCertificateReason;
     this._subjectAlternativeNames = config.subjectAlternativeNames;
     this._useRenewalInfo = config.useRenewalInfo;
+    this._validityDays = config.validityDays;
     this._dnsChallenge.internalValue = config.dnsChallenge;
     this._httpChallenge.internalValue = config.httpChallenge;
     this._httpMemcachedChallenge.internalValue = config.httpMemcachedChallenge;
@@ -843,6 +863,11 @@ export class Certificate extends cdktf.TerraformResource {
   // certificate_not_after - computed: true, optional: false, required: false
   public get certificateNotAfter() {
     return this.getStringAttribute('certificate_not_after');
+  }
+
+  // certificate_not_before - computed: true, optional: false, required: false
+  public get certificateNotBefore() {
+    return this.getStringAttribute('certificate_not_before');
   }
 
   // certificate_p12 - computed: true, optional: false, required: false
@@ -913,12 +938,28 @@ export class Certificate extends cdktf.TerraformResource {
     return this._commonName;
   }
 
+  // deactivate_authorizations - computed: false, optional: true, required: false
+  private _deactivateAuthorizations?: boolean | cdktn.IResolvable; 
+  public get deactivateAuthorizations() {
+    return this.getBooleanAttribute('deactivate_authorizations');
+  }
+  public set deactivateAuthorizations(value: boolean | cdktn.IResolvable) {
+    this._deactivateAuthorizations = value;
+  }
+  public resetDeactivateAuthorizations() {
+    this._deactivateAuthorizations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deactivateAuthorizationsInput() {
+    return this._deactivateAuthorizations;
+  }
+
   // disable_complete_propagation - computed: false, optional: true, required: false
-  private _disableCompletePropagation?: boolean | cdktf.IResolvable; 
+  private _disableCompletePropagation?: boolean | cdktn.IResolvable; 
   public get disableCompletePropagation() {
     return this.getBooleanAttribute('disable_complete_propagation');
   }
-  public set disableCompletePropagation(value: boolean | cdktf.IResolvable) {
+  public set disableCompletePropagation(value: boolean | cdktn.IResolvable) {
     this._disableCompletePropagation = value;
   }
   public resetDisableCompletePropagation() {
@@ -966,6 +1007,22 @@ export class Certificate extends cdktf.TerraformResource {
     return this._keyType;
   }
 
+  // min_days_dynamic - computed: false, optional: true, required: false
+  private _minDaysDynamic?: boolean | cdktn.IResolvable; 
+  public get minDaysDynamic() {
+    return this.getBooleanAttribute('min_days_dynamic');
+  }
+  public set minDaysDynamic(value: boolean | cdktn.IResolvable) {
+    this._minDaysDynamic = value;
+  }
+  public resetMinDaysDynamic() {
+    this._minDaysDynamic = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minDaysDynamicInput() {
+    return this._minDaysDynamic;
+  }
+
   // min_days_remaining - computed: false, optional: true, required: false
   private _minDaysRemaining?: number; 
   public get minDaysRemaining() {
@@ -983,11 +1040,11 @@ export class Certificate extends cdktf.TerraformResource {
   }
 
   // must_staple - computed: false, optional: true, required: false
-  private _mustStaple?: boolean | cdktf.IResolvable; 
+  private _mustStaple?: boolean | cdktn.IResolvable; 
   public get mustStaple() {
     return this.getBooleanAttribute('must_staple');
   }
-  public set mustStaple(value: boolean | cdktf.IResolvable) {
+  public set mustStaple(value: boolean | cdktn.IResolvable) {
     this._mustStaple = value;
   }
   public resetMustStaple() {
@@ -1051,6 +1108,22 @@ export class Certificate extends cdktf.TerraformResource {
     return this._profile;
   }
 
+  // propagation_wait - computed: false, optional: true, required: false
+  private _propagationWait?: number; 
+  public get propagationWait() {
+    return this.getNumberAttribute('propagation_wait');
+  }
+  public set propagationWait(value: number) {
+    this._propagationWait = value;
+  }
+  public resetPropagationWait() {
+    this._propagationWait = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propagationWaitInput() {
+    return this._propagationWait;
+  }
+
   // recursive_nameservers - computed: false, optional: true, required: false
   private _recursiveNameservers?: string[]; 
   public get recursiveNameservers() {
@@ -1073,11 +1146,11 @@ export class Certificate extends cdktf.TerraformResource {
   }
 
   // renewal_info_ignore_retry_after - computed: false, optional: true, required: false
-  private _renewalInfoIgnoreRetryAfter?: boolean | cdktf.IResolvable; 
+  private _renewalInfoIgnoreRetryAfter?: boolean | cdktn.IResolvable; 
   public get renewalInfoIgnoreRetryAfter() {
     return this.getBooleanAttribute('renewal_info_ignore_retry_after');
   }
-  public set renewalInfoIgnoreRetryAfter(value: boolean | cdktf.IResolvable) {
+  public set renewalInfoIgnoreRetryAfter(value: boolean | cdktn.IResolvable) {
     this._renewalInfoIgnoreRetryAfter = value;
   }
   public resetRenewalInfoIgnoreRetryAfter() {
@@ -1125,11 +1198,11 @@ export class Certificate extends cdktf.TerraformResource {
   }
 
   // revoke_certificate_on_destroy - computed: false, optional: true, required: false
-  private _revokeCertificateOnDestroy?: boolean | cdktf.IResolvable; 
+  private _revokeCertificateOnDestroy?: boolean | cdktn.IResolvable; 
   public get revokeCertificateOnDestroy() {
     return this.getBooleanAttribute('revoke_certificate_on_destroy');
   }
-  public set revokeCertificateOnDestroy(value: boolean | cdktf.IResolvable) {
+  public set revokeCertificateOnDestroy(value: boolean | cdktn.IResolvable) {
     this._revokeCertificateOnDestroy = value;
   }
   public resetRevokeCertificateOnDestroy() {
@@ -1159,7 +1232,7 @@ export class Certificate extends cdktf.TerraformResource {
   // subject_alternative_names - computed: false, optional: true, required: false
   private _subjectAlternativeNames?: string[]; 
   public get subjectAlternativeNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('subject_alternative_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('subject_alternative_names'));
   }
   public set subjectAlternativeNames(value: string[]) {
     this._subjectAlternativeNames = value;
@@ -1173,11 +1246,11 @@ export class Certificate extends cdktf.TerraformResource {
   }
 
   // use_renewal_info - computed: false, optional: true, required: false
-  private _useRenewalInfo?: boolean | cdktf.IResolvable; 
+  private _useRenewalInfo?: boolean | cdktn.IResolvable; 
   public get useRenewalInfo() {
     return this.getBooleanAttribute('use_renewal_info');
   }
-  public set useRenewalInfo(value: boolean | cdktf.IResolvable) {
+  public set useRenewalInfo(value: boolean | cdktn.IResolvable) {
     this._useRenewalInfo = value;
   }
   public resetUseRenewalInfo() {
@@ -1188,12 +1261,28 @@ export class Certificate extends cdktf.TerraformResource {
     return this._useRenewalInfo;
   }
 
+  // validity_days - computed: false, optional: true, required: false
+  private _validityDays?: number; 
+  public get validityDays() {
+    return this.getNumberAttribute('validity_days');
+  }
+  public set validityDays(value: number) {
+    this._validityDays = value;
+  }
+  public resetValidityDays() {
+    this._validityDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get validityDaysInput() {
+    return this._validityDays;
+  }
+
   // dns_challenge - computed: false, optional: true, required: false
   private _dnsChallenge = new CertificateDnsChallengeList(this, "dns_challenge", false);
   public get dnsChallenge() {
     return this._dnsChallenge;
   }
-  public putDnsChallenge(value: CertificateDnsChallenge[] | cdktf.IResolvable) {
+  public putDnsChallenge(value: CertificateDnsChallenge[] | cdktn.IResolvable) {
     this._dnsChallenge.internalValue = value;
   }
   public resetDnsChallenge() {
@@ -1290,27 +1379,31 @@ export class Certificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_key_pem: cdktf.stringToTerraform(this._accountKeyPem),
-      cert_timeout: cdktf.numberToTerraform(this._certTimeout),
-      certificate_p12_password: cdktf.stringToTerraform(this._certificateP12Password),
-      certificate_request_pem: cdktf.stringToTerraform(this._certificateRequestPem),
-      common_name: cdktf.stringToTerraform(this._commonName),
-      disable_complete_propagation: cdktf.booleanToTerraform(this._disableCompletePropagation),
-      id: cdktf.stringToTerraform(this._id),
-      key_type: cdktf.stringToTerraform(this._keyType),
-      min_days_remaining: cdktf.numberToTerraform(this._minDaysRemaining),
-      must_staple: cdktf.booleanToTerraform(this._mustStaple),
-      pre_check_delay: cdktf.numberToTerraform(this._preCheckDelay),
-      preferred_chain: cdktf.stringToTerraform(this._preferredChain),
-      profile: cdktf.stringToTerraform(this._profile),
-      recursive_nameservers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._recursiveNameservers),
-      renewal_info_ignore_retry_after: cdktf.booleanToTerraform(this._renewalInfoIgnoreRetryAfter),
-      renewal_info_max_sleep: cdktf.numberToTerraform(this._renewalInfoMaxSleep),
-      revoke_certificate_on_destroy: cdktf.booleanToTerraform(this._revokeCertificateOnDestroy),
-      revoke_certificate_reason: cdktf.stringToTerraform(this._revokeCertificateReason),
-      subject_alternative_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subjectAlternativeNames),
-      use_renewal_info: cdktf.booleanToTerraform(this._useRenewalInfo),
-      dns_challenge: cdktf.listMapper(certificateDnsChallengeToTerraform, true)(this._dnsChallenge.internalValue),
+      account_key_pem: cdktn.stringToTerraform(this._accountKeyPem),
+      cert_timeout: cdktn.numberToTerraform(this._certTimeout),
+      certificate_p12_password: cdktn.stringToTerraform(this._certificateP12Password),
+      certificate_request_pem: cdktn.stringToTerraform(this._certificateRequestPem),
+      common_name: cdktn.stringToTerraform(this._commonName),
+      deactivate_authorizations: cdktn.booleanToTerraform(this._deactivateAuthorizations),
+      disable_complete_propagation: cdktn.booleanToTerraform(this._disableCompletePropagation),
+      id: cdktn.stringToTerraform(this._id),
+      key_type: cdktn.stringToTerraform(this._keyType),
+      min_days_dynamic: cdktn.booleanToTerraform(this._minDaysDynamic),
+      min_days_remaining: cdktn.numberToTerraform(this._minDaysRemaining),
+      must_staple: cdktn.booleanToTerraform(this._mustStaple),
+      pre_check_delay: cdktn.numberToTerraform(this._preCheckDelay),
+      preferred_chain: cdktn.stringToTerraform(this._preferredChain),
+      profile: cdktn.stringToTerraform(this._profile),
+      propagation_wait: cdktn.numberToTerraform(this._propagationWait),
+      recursive_nameservers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._recursiveNameservers),
+      renewal_info_ignore_retry_after: cdktn.booleanToTerraform(this._renewalInfoIgnoreRetryAfter),
+      renewal_info_max_sleep: cdktn.numberToTerraform(this._renewalInfoMaxSleep),
+      revoke_certificate_on_destroy: cdktn.booleanToTerraform(this._revokeCertificateOnDestroy),
+      revoke_certificate_reason: cdktn.stringToTerraform(this._revokeCertificateReason),
+      subject_alternative_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subjectAlternativeNames),
+      use_renewal_info: cdktn.booleanToTerraform(this._useRenewalInfo),
+      validity_days: cdktn.numberToTerraform(this._validityDays),
+      dns_challenge: cdktn.listMapper(certificateDnsChallengeToTerraform, true)(this._dnsChallenge.internalValue),
       http_challenge: certificateHttpChallengeToTerraform(this._httpChallenge.internalValue),
       http_memcached_challenge: certificateHttpMemcachedChallengeToTerraform(this._httpMemcachedChallenge.internalValue),
       http_s3_challenge: certificateHttpS3ChallengeToTerraform(this._httpS3Challenge.internalValue),
@@ -1322,127 +1415,151 @@ export class Certificate extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_key_pem: {
-        value: cdktf.stringToHclTerraform(this._accountKeyPem),
+        value: cdktn.stringToHclTerraform(this._accountKeyPem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cert_timeout: {
-        value: cdktf.numberToHclTerraform(this._certTimeout),
+        value: cdktn.numberToHclTerraform(this._certTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       certificate_p12_password: {
-        value: cdktf.stringToHclTerraform(this._certificateP12Password),
+        value: cdktn.stringToHclTerraform(this._certificateP12Password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_request_pem: {
-        value: cdktf.stringToHclTerraform(this._certificateRequestPem),
+        value: cdktn.stringToHclTerraform(this._certificateRequestPem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       common_name: {
-        value: cdktf.stringToHclTerraform(this._commonName),
+        value: cdktn.stringToHclTerraform(this._commonName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
+      deactivate_authorizations: {
+        value: cdktn.booleanToHclTerraform(this._deactivateAuthorizations),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       disable_complete_propagation: {
-        value: cdktf.booleanToHclTerraform(this._disableCompletePropagation),
+        value: cdktn.booleanToHclTerraform(this._disableCompletePropagation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_type: {
-        value: cdktf.stringToHclTerraform(this._keyType),
+        value: cdktn.stringToHclTerraform(this._keyType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
+      min_days_dynamic: {
+        value: cdktn.booleanToHclTerraform(this._minDaysDynamic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       min_days_remaining: {
-        value: cdktf.numberToHclTerraform(this._minDaysRemaining),
+        value: cdktn.numberToHclTerraform(this._minDaysRemaining),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       must_staple: {
-        value: cdktf.booleanToHclTerraform(this._mustStaple),
+        value: cdktn.booleanToHclTerraform(this._mustStaple),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       pre_check_delay: {
-        value: cdktf.numberToHclTerraform(this._preCheckDelay),
+        value: cdktn.numberToHclTerraform(this._preCheckDelay),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       preferred_chain: {
-        value: cdktf.stringToHclTerraform(this._preferredChain),
+        value: cdktn.stringToHclTerraform(this._preferredChain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       profile: {
-        value: cdktf.stringToHclTerraform(this._profile),
+        value: cdktn.stringToHclTerraform(this._profile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
+      propagation_wait: {
+        value: cdktn.numberToHclTerraform(this._propagationWait),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       recursive_nameservers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._recursiveNameservers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._recursiveNameservers),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       renewal_info_ignore_retry_after: {
-        value: cdktf.booleanToHclTerraform(this._renewalInfoIgnoreRetryAfter),
+        value: cdktn.booleanToHclTerraform(this._renewalInfoIgnoreRetryAfter),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       renewal_info_max_sleep: {
-        value: cdktf.numberToHclTerraform(this._renewalInfoMaxSleep),
+        value: cdktn.numberToHclTerraform(this._renewalInfoMaxSleep),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       revoke_certificate_on_destroy: {
-        value: cdktf.booleanToHclTerraform(this._revokeCertificateOnDestroy),
+        value: cdktn.booleanToHclTerraform(this._revokeCertificateOnDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       revoke_certificate_reason: {
-        value: cdktf.stringToHclTerraform(this._revokeCertificateReason),
+        value: cdktn.stringToHclTerraform(this._revokeCertificateReason),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subject_alternative_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subjectAlternativeNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subjectAlternativeNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       use_renewal_info: {
-        value: cdktf.booleanToHclTerraform(this._useRenewalInfo),
+        value: cdktn.booleanToHclTerraform(this._useRenewalInfo),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
+      validity_days: {
+        value: cdktn.numberToHclTerraform(this._validityDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       dns_challenge: {
-        value: cdktf.listMapperHcl(certificateDnsChallengeToHclTerraform, true)(this._dnsChallenge.internalValue),
+        value: cdktn.listMapperHcl(certificateDnsChallengeToHclTerraform, true)(this._dnsChallenge.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CertificateDnsChallengeList",

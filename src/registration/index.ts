@@ -1,39 +1,39 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/registration
+// https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/registration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RegistrationConfig extends cdktf.TerraformMetaArguments {
+export interface RegistrationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/registration#account_key_algorithm Registration#account_key_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/registration#account_key_algorithm Registration#account_key_algorithm}
   */
   readonly accountKeyAlgorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/registration#account_key_ecdsa_curve Registration#account_key_ecdsa_curve}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/registration#account_key_ecdsa_curve Registration#account_key_ecdsa_curve}
   */
   readonly accountKeyEcdsaCurve?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/registration#account_key_pem Registration#account_key_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/registration#account_key_pem Registration#account_key_pem}
   */
   readonly accountKeyPem?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/registration#account_key_rsa_bits Registration#account_key_rsa_bits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/registration#account_key_rsa_bits Registration#account_key_rsa_bits}
   */
   readonly accountKeyRsaBits?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/registration#email_address Registration#email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/registration#email_address Registration#email_address}
   */
-  readonly emailAddress: string;
+  readonly emailAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/registration#id Registration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/registration#id Registration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -42,47 +42,47 @@ export interface RegistrationConfig extends cdktf.TerraformMetaArguments {
   /**
   * external_account_binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/registration#external_account_binding Registration#external_account_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/registration#external_account_binding Registration#external_account_binding}
   */
   readonly externalAccountBinding?: RegistrationExternalAccountBinding;
 }
 export interface RegistrationExternalAccountBinding {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/registration#hmac_base64 Registration#hmac_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/registration#hmac_base64 Registration#hmac_base64}
   */
   readonly hmacBase64: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/registration#key_id Registration#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/registration#key_id Registration#key_id}
   */
   readonly keyId: string;
 }
 
 export function registrationExternalAccountBindingToTerraform(struct?: RegistrationExternalAccountBindingOutputReference | RegistrationExternalAccountBinding): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hmac_base64: cdktf.stringToTerraform(struct!.hmacBase64),
-    key_id: cdktf.stringToTerraform(struct!.keyId),
+    hmac_base64: cdktn.stringToTerraform(struct!.hmacBase64),
+    key_id: cdktn.stringToTerraform(struct!.keyId),
   }
 }
 
 
 export function registrationExternalAccountBindingToHclTerraform(struct?: RegistrationExternalAccountBindingOutputReference | RegistrationExternalAccountBinding): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hmac_base64: {
-      value: cdktf.stringToHclTerraform(struct!.hmacBase64),
+      value: cdktn.stringToHclTerraform(struct!.hmacBase64),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyId),
+      value: cdktn.stringToHclTerraform(struct!.keyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -93,14 +93,14 @@ export function registrationExternalAccountBindingToHclTerraform(struct?: Regist
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RegistrationExternalAccountBindingOutputReference extends cdktf.ComplexObject {
+export class RegistrationExternalAccountBindingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -159,9 +159,9 @@ export class RegistrationExternalAccountBindingOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/registration acme_registration}
+* Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/registration acme_registration}
 */
-export class Registration extends cdktf.TerraformResource {
+export class Registration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -172,14 +172,14 @@ export class Registration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Registration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Registration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Registration to import
-  * @param importFromId The id of the existing Registration that should be imported. Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/registration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Registration that should be imported. Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/registration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Registration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "acme_registration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "acme_registration", importId: importFromId, provider });
       }
 
   // ===========
@@ -187,18 +187,18 @@ export class Registration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/vancluever/acme/2.39.0/docs/resources/registration acme_registration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/vancluever/acme/2.44.1/docs/resources/registration acme_registration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options RegistrationConfig
+  * @param options RegistrationConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: RegistrationConfig) {
+  public constructor(scope: Construct, id: string, config: RegistrationConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'acme_registration',
       terraformGeneratorMetadata: {
         providerName: 'acme',
-        providerVersion: '2.39.0',
+        providerVersion: '2.44.1',
         providerVersionConstraint: '~> 2.10'
       },
       provider: config.provider,
@@ -286,13 +286,16 @@ export class Registration extends cdktf.TerraformResource {
     return this._accountKeyRsaBits;
   }
 
-  // email_address - computed: false, optional: false, required: true
+  // email_address - computed: false, optional: true, required: false
   private _emailAddress?: string; 
   public get emailAddress() {
     return this.getStringAttribute('email_address');
   }
   public set emailAddress(value: string) {
     this._emailAddress = value;
+  }
+  public resetEmailAddress() {
+    this._emailAddress = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get emailAddressInput() {
@@ -342,12 +345,12 @@ export class Registration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_key_algorithm: cdktf.stringToTerraform(this._accountKeyAlgorithm),
-      account_key_ecdsa_curve: cdktf.stringToTerraform(this._accountKeyEcdsaCurve),
-      account_key_pem: cdktf.stringToTerraform(this._accountKeyPem),
-      account_key_rsa_bits: cdktf.numberToTerraform(this._accountKeyRsaBits),
-      email_address: cdktf.stringToTerraform(this._emailAddress),
-      id: cdktf.stringToTerraform(this._id),
+      account_key_algorithm: cdktn.stringToTerraform(this._accountKeyAlgorithm),
+      account_key_ecdsa_curve: cdktn.stringToTerraform(this._accountKeyEcdsaCurve),
+      account_key_pem: cdktn.stringToTerraform(this._accountKeyPem),
+      account_key_rsa_bits: cdktn.numberToTerraform(this._accountKeyRsaBits),
+      email_address: cdktn.stringToTerraform(this._emailAddress),
+      id: cdktn.stringToTerraform(this._id),
       external_account_binding: registrationExternalAccountBindingToTerraform(this._externalAccountBinding.internalValue),
     };
   }
@@ -355,37 +358,37 @@ export class Registration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_key_algorithm: {
-        value: cdktf.stringToHclTerraform(this._accountKeyAlgorithm),
+        value: cdktn.stringToHclTerraform(this._accountKeyAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       account_key_ecdsa_curve: {
-        value: cdktf.stringToHclTerraform(this._accountKeyEcdsaCurve),
+        value: cdktn.stringToHclTerraform(this._accountKeyEcdsaCurve),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       account_key_pem: {
-        value: cdktf.stringToHclTerraform(this._accountKeyPem),
+        value: cdktn.stringToHclTerraform(this._accountKeyPem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       account_key_rsa_bits: {
-        value: cdktf.numberToHclTerraform(this._accountKeyRsaBits),
+        value: cdktn.numberToHclTerraform(this._accountKeyRsaBits),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       email_address: {
-        value: cdktf.stringToHclTerraform(this._emailAddress),
+        value: cdktn.stringToHclTerraform(this._emailAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
