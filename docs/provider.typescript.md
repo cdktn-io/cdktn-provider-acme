@@ -4,7 +4,7 @@
 
 ### AcmeProvider <a name="AcmeProvider" id="@cdktn/provider-acme.provider.AcmeProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.45.1/docs acme}.
+Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.46.0/docs acme}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-acme.provider.AcmeProvider.Initializer"></a>
 
@@ -262,7 +262,7 @@ The construct id used in the generated config for the AcmeProvider to import.
 
 The id of the existing AcmeProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.45.1/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.46.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -449,7 +449,7 @@ const acmeProviderConfig: provider.AcmeProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-acme.provider.AcmeProviderConfig.property.serverUrl">serverUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.45.1/docs#server_url AcmeProvider#server_url}. |
+| <code><a href="#@cdktn/provider-acme.provider.AcmeProviderConfig.property.serverUrl">serverUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.46.0/docs#server_url AcmeProvider#server_url}. |
 | <code><a href="#@cdktn/provider-acme.provider.AcmeProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
 
 ---
@@ -462,7 +462,7 @@ public readonly serverUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.45.1/docs#server_url AcmeProvider#server_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.46.0/docs#server_url AcmeProvider#server_url}.
 
 ---
 
@@ -476,7 +476,7 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.45.1/docs#alias AcmeProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.46.0/docs#alias AcmeProvider#alias}
 
 ---
 
