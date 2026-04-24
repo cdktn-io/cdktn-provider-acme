@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/vancluever/acme/2.47.0/docs
+// https://registry.terraform.io/providers/vancluever/acme/2.48.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,19 @@ import * as cdktn from 'cdktn';
 
 export interface AcmeProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.47.0/docs#server_url AcmeProvider#server_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.0/docs#server_url AcmeProvider#server_url}
   */
   readonly serverUrl: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.47.0/docs#alias AcmeProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.0/docs#alias AcmeProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.47.0/docs acme}
+* Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.48.0/docs acme}
 */
 export class AcmeProvider extends cdktn.TerraformProvider {
 
@@ -41,7 +41,7 @@ export class AcmeProvider extends cdktn.TerraformProvider {
   * Generates CDKTN code for importing a AcmeProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AcmeProvider to import
-  * @param importFromId The id of the existing AcmeProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.47.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AcmeProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.48.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AcmeProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class AcmeProvider extends cdktn.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/vancluever/acme/2.47.0/docs acme} Resource
+  * Create a new {@link https://registry.terraform.io/providers/vancluever/acme/2.48.0/docs acme} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class AcmeProvider extends cdktn.TerraformProvider {
       terraformResourceType: 'acme',
       terraformGeneratorMetadata: {
         providerName: 'acme',
-        providerVersion: '2.47.0',
+        providerVersion: '2.48.0',
         providerVersionConstraint: '~> 2.10'
       },
       terraformProviderSource: 'vancluever/acme'
