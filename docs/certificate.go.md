@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.48
 #### Initializers <a name="Initializers" id="@cdktn/provider-acme.certificate.Certificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 certificate.NewCertificate(scope Construct, id *string, config CertificateConfig) Certificate
 ```
@@ -681,7 +681,7 @@ func ResetValidityDays()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-acme.certificate.Certificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 certificate.Certificate_IsConstruct(x interface{}) *bool
 ```
@@ -713,7 +713,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-acme.certificate.Certificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 certificate.Certificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -727,7 +727,7 @@ certificate.Certificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-acme.certificate.Certificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 certificate.Certificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -741,7 +741,7 @@ certificate.Certificate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-acme.certificate.Certificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 certificate.Certificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1784,7 +1784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-acme.certificate.CertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 &certificate.CertificateConfig {
 	Connection: interface{},
@@ -1802,10 +1802,10 @@ import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
 	DeactivateAuthorizations: interface{},
 	DisableCompletePropagation: interface{},
 	DnsChallenge: interface{},
-	HttpChallenge: github.com/cdktn-io/cdktn-provider-acme-go/acme/v13.certificate.CertificateHttpChallenge,
-	HttpMemcachedChallenge: github.com/cdktn-io/cdktn-provider-acme-go/acme/v13.certificate.CertificateHttpMemcachedChallenge,
-	HttpS3Challenge: github.com/cdktn-io/cdktn-provider-acme-go/acme/v13.certificate.CertificateHttpS3Challenge,
-	HttpWebrootChallenge: github.com/cdktn-io/cdktn-provider-acme-go/acme/v13.certificate.CertificateHttpWebrootChallenge,
+	HttpChallenge: github.com/cdktn-io/cdktn-provider-acme-go/acme/v14.certificate.CertificateHttpChallenge,
+	HttpMemcachedChallenge: github.com/cdktn-io/cdktn-provider-acme-go/acme/v14.certificate.CertificateHttpMemcachedChallenge,
+	HttpS3Challenge: github.com/cdktn-io/cdktn-provider-acme-go/acme/v14.certificate.CertificateHttpS3Challenge,
+	HttpWebrootChallenge: github.com/cdktn-io/cdktn-provider-acme-go/acme/v14.certificate.CertificateHttpWebrootChallenge,
 	Id: *string,
 	KeyType: *string,
 	MinDaysDynamic: interface{},
@@ -1821,7 +1821,7 @@ import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
 	RevokeCertificateOnDestroy: interface{},
 	RevokeCertificateReason: *string,
 	SubjectAlternativeNames: *[]*string,
-	TlsChallenge: github.com/cdktn-io/cdktn-provider-acme-go/acme/v13.certificate.CertificateTlsChallenge,
+	TlsChallenge: github.com/cdktn-io/cdktn-provider-acme-go/acme/v14.certificate.CertificateTlsChallenge,
 	UseRenewalInfo: interface{},
 	ValidityDays: *f64,
 }
@@ -2321,7 +2321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 #### Initializer <a name="Initializer" id="@cdktn/provider-acme.certificate.CertificateDnsChallenge.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 &certificate.CertificateDnsChallenge {
 	Provider: *string,
@@ -2367,7 +2367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 #### Initializer <a name="Initializer" id="@cdktn/provider-acme.certificate.CertificateHttpChallenge.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 &certificate.CertificateHttpChallenge {
 	Port: *f64,
@@ -2413,7 +2413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 #### Initializer <a name="Initializer" id="@cdktn/provider-acme.certificate.CertificateHttpMemcachedChallenge.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 &certificate.CertificateHttpMemcachedChallenge {
 	Hosts: *[]*string,
@@ -2445,7 +2445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 #### Initializer <a name="Initializer" id="@cdktn/provider-acme.certificate.CertificateHttpS3Challenge.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 &certificate.CertificateHttpS3Challenge {
 	S3Bucket: *string,
@@ -2477,7 +2477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 #### Initializer <a name="Initializer" id="@cdktn/provider-acme.certificate.CertificateHttpWebrootChallenge.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 &certificate.CertificateHttpWebrootChallenge {
 	Directory: *string,
@@ -2509,7 +2509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 #### Initializer <a name="Initializer" id="@cdktn/provider-acme.certificate.CertificateTlsChallenge.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 &certificate.CertificateTlsChallenge {
 	Port: *f64,
@@ -2543,7 +2543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 #### Initializers <a name="Initializers" id="@cdktn/provider-acme.certificate.CertificateDnsChallengeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 certificate.NewCertificateDnsChallengeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertificateDnsChallengeList
 ```
@@ -2703,7 +2703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 certificate.NewCertificateDnsChallengeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CertificateDnsChallengeOutputReference
 ```
@@ -3021,7 +3021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-acme.certificate.CertificateHttpChallengeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 certificate.NewCertificateHttpChallengeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificateHttpChallengeOutputReference
 ```
@@ -3328,7 +3328,7 @@ func InternalValue() CertificateHttpChallenge
 #### Initializers <a name="Initializers" id="@cdktn/provider-acme.certificate.CertificateHttpMemcachedChallengeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 certificate.NewCertificateHttpMemcachedChallengeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificateHttpMemcachedChallengeOutputReference
 ```
@@ -3599,7 +3599,7 @@ func InternalValue() CertificateHttpMemcachedChallenge
 #### Initializers <a name="Initializers" id="@cdktn/provider-acme.certificate.CertificateHttpS3ChallengeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 certificate.NewCertificateHttpS3ChallengeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificateHttpS3ChallengeOutputReference
 ```
@@ -3870,7 +3870,7 @@ func InternalValue() CertificateHttpS3Challenge
 #### Initializers <a name="Initializers" id="@cdktn/provider-acme.certificate.CertificateHttpWebrootChallengeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 certificate.NewCertificateHttpWebrootChallengeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificateHttpWebrootChallengeOutputReference
 ```
@@ -4141,7 +4141,7 @@ func InternalValue() CertificateHttpWebrootChallenge
 #### Initializers <a name="Initializers" id="@cdktn/provider-acme.certificate.CertificateTlsChallengeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v13/certificate"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v14/certificate"
 
 certificate.NewCertificateTlsChallengeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificateTlsChallengeOutputReference
 ```
