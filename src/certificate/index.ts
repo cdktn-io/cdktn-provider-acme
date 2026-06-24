@@ -162,7 +162,7 @@ export interface CertificateDnsChallenge {
 export function certificateDnsChallengeToTerraform(struct?: CertificateDnsChallenge | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     config: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.config),
@@ -174,7 +174,7 @@ export function certificateDnsChallengeToTerraform(struct?: CertificateDnsChalle
 export function certificateDnsChallengeToHclTerraform(struct?: CertificateDnsChallenge | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     config: {
@@ -308,7 +308,7 @@ export interface CertificateHttpChallenge {
 export function certificateHttpChallengeToTerraform(struct?: CertificateHttpChallengeOutputReference | CertificateHttpChallenge): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port: cdktn.numberToTerraform(struct!.port),
@@ -320,7 +320,7 @@ export function certificateHttpChallengeToTerraform(struct?: CertificateHttpChal
 export function certificateHttpChallengeToHclTerraform(struct?: CertificateHttpChallengeOutputReference | CertificateHttpChallenge): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port: {
@@ -421,7 +421,7 @@ export interface CertificateHttpMemcachedChallenge {
 export function certificateHttpMemcachedChallengeToTerraform(struct?: CertificateHttpMemcachedChallengeOutputReference | CertificateHttpMemcachedChallenge): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hosts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.hosts),
@@ -432,7 +432,7 @@ export function certificateHttpMemcachedChallengeToTerraform(struct?: Certificat
 export function certificateHttpMemcachedChallengeToHclTerraform(struct?: CertificateHttpMemcachedChallengeOutputReference | CertificateHttpMemcachedChallenge): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hosts: {
@@ -502,7 +502,7 @@ export interface CertificateHttpS3Challenge {
 export function certificateHttpS3ChallengeToTerraform(struct?: CertificateHttpS3ChallengeOutputReference | CertificateHttpS3Challenge): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     s3_bucket: cdktn.stringToTerraform(struct!.s3Bucket),
@@ -513,7 +513,7 @@ export function certificateHttpS3ChallengeToTerraform(struct?: CertificateHttpS3
 export function certificateHttpS3ChallengeToHclTerraform(struct?: CertificateHttpS3ChallengeOutputReference | CertificateHttpS3Challenge): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     s3_bucket: {
@@ -583,7 +583,7 @@ export interface CertificateHttpWebrootChallenge {
 export function certificateHttpWebrootChallengeToTerraform(struct?: CertificateHttpWebrootChallengeOutputReference | CertificateHttpWebrootChallenge): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     directory: cdktn.stringToTerraform(struct!.directory),
@@ -594,7 +594,7 @@ export function certificateHttpWebrootChallengeToTerraform(struct?: CertificateH
 export function certificateHttpWebrootChallengeToHclTerraform(struct?: CertificateHttpWebrootChallengeOutputReference | CertificateHttpWebrootChallenge): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     directory: {
@@ -664,7 +664,7 @@ export interface CertificateTlsChallenge {
 export function certificateTlsChallengeToTerraform(struct?: CertificateTlsChallengeOutputReference | CertificateTlsChallenge): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port: cdktn.numberToTerraform(struct!.port),
@@ -675,7 +675,7 @@ export function certificateTlsChallengeToTerraform(struct?: CertificateTlsChalle
 export function certificateTlsChallengeToHclTerraform(struct?: CertificateTlsChallengeOutputReference | CertificateTlsChallenge): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port: {
