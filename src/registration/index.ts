@@ -60,7 +60,7 @@ export interface RegistrationExternalAccountBinding {
 export function registrationExternalAccountBindingToTerraform(struct?: RegistrationExternalAccountBindingOutputReference | RegistrationExternalAccountBinding): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hmac_base64: cdktn.stringToTerraform(struct!.hmacBase64),
@@ -72,7 +72,7 @@ export function registrationExternalAccountBindingToTerraform(struct?: Registrat
 export function registrationExternalAccountBindingToHclTerraform(struct?: RegistrationExternalAccountBindingOutputReference | RegistrationExternalAccountBinding): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hmac_base64: {
