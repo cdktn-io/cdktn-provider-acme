@@ -4,7 +4,7 @@
 
 ### AcmeProvider <a name="AcmeProvider" id="@cdktn/provider-acme.provider.AcmeProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.48.1/docs acme}.
+Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.48.2/docs acme}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-acme.provider.AcmeProvider.Initializer"></a>
 
@@ -21,7 +21,7 @@ AcmeProvider.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-acme.provider.AcmeProvider.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-acme.provider.AcmeProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-acme.provider.AcmeProvider.Initializer.parameter.serverUrl">serverUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.1/docs#server_url AcmeProvider#server_url}. |
+| <code><a href="#@cdktn/provider-acme.provider.AcmeProvider.Initializer.parameter.serverUrl">serverUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.2/docs#server_url AcmeProvider#server_url}. |
 | <code><a href="#@cdktn/provider-acme.provider.AcmeProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 
 ---
@@ -48,7 +48,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.1/docs#server_url AcmeProvider#server_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.2/docs#server_url AcmeProvider#server_url}.
 
 ---
 
@@ -58,7 +58,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.1/docs#alias AcmeProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.2/docs#alias AcmeProvider#alias}
 
 ---
 
@@ -278,7 +278,7 @@ The construct id used in the generated config for the AcmeProvider to import.
 
 The id of the existing AcmeProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.48.1/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.48.2/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -468,7 +468,7 @@ AcmeProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-acme.provider.AcmeProviderConfig.property.serverUrl">serverUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.1/docs#server_url AcmeProvider#server_url}. |
+| <code><a href="#@cdktn/provider-acme.provider.AcmeProviderConfig.property.serverUrl">serverUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.2/docs#server_url AcmeProvider#server_url}. |
 | <code><a href="#@cdktn/provider-acme.provider.AcmeProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 
 ---
@@ -481,7 +481,7 @@ public java.lang.String getServerUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.1/docs#server_url AcmeProvider#server_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.2/docs#server_url AcmeProvider#server_url}.
 
 ---
 
@@ -495,7 +495,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.1/docs#alias AcmeProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.2/docs#alias AcmeProvider#alias}
 
 ---
 
