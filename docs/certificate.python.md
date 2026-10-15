@@ -4,7 +4,7 @@
 
 ### Certificate <a name="Certificate" id="@cdktn/provider-acme.certificate.Certificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate acme_certificate}.
+Represents a {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate acme_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-acme.certificate.Certificate.Initializer"></a>
 
@@ -27,7 +27,7 @@ certificate.Certificate(
   cert_timeout: typing.Union[int, float] = None,
   common_name: str = None,
   deactivate_authorizations: bool | IResolvable = None,
-  disable_complete_propagation: bool | IResolvable = None,
+  disable_authoritative_propagation: bool | IResolvable = None,
   dns_challenge: IResolvable | typing.List[CertificateDnsChallenge] = None,
   http_challenge: CertificateHttpChallenge = None,
   http_memcached_challenge: CertificateHttpMemcachedChallenge = None,
@@ -65,36 +65,36 @@ certificate.Certificate(
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.accountKeyPem">account_key_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#account_key_pem Certificate#account_key_pem}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.certificateP12Password">certificate_p12_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#certificate_p12_password Certificate#certificate_p12_password}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.certificateRequestPem">certificate_request_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#certificate_request_pem Certificate#certificate_request_pem}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.certTimeout">cert_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#cert_timeout Certificate#cert_timeout}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.commonName">common_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#common_name Certificate#common_name}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.deactivateAuthorizations">deactivate_authorizations</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#deactivate_authorizations Certificate#deactivate_authorizations}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.disableCompletePropagation">disable_complete_propagation</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#disable_complete_propagation Certificate#disable_complete_propagation}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.accountKeyPem">account_key_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#account_key_pem Certificate#account_key_pem}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.certificateP12Password">certificate_p12_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#certificate_p12_password Certificate#certificate_p12_password}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.certificateRequestPem">certificate_request_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#certificate_request_pem Certificate#certificate_request_pem}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.certTimeout">cert_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#cert_timeout Certificate#cert_timeout}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.commonName">common_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#common_name Certificate#common_name}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.deactivateAuthorizations">deactivate_authorizations</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#deactivate_authorizations Certificate#deactivate_authorizations}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.disableAuthoritativePropagation">disable_authoritative_propagation</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#disable_authoritative_propagation Certificate#disable_authoritative_propagation}. |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.dnsChallenge">dns_challenge</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-acme.certificate.CertificateDnsChallenge">CertificateDnsChallenge</a>]</code> | dns_challenge block. |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.httpChallenge">http_challenge</a></code> | <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpChallenge">CertificateHttpChallenge</a></code> | http_challenge block. |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.httpMemcachedChallenge">http_memcached_challenge</a></code> | <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpMemcachedChallenge">CertificateHttpMemcachedChallenge</a></code> | http_memcached_challenge block. |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.httpS3Challenge">http_s3_challenge</a></code> | <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpS3Challenge">CertificateHttpS3Challenge</a></code> | http_s3_challenge block. |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.httpWebrootChallenge">http_webroot_challenge</a></code> | <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpWebrootChallenge">CertificateHttpWebrootChallenge</a></code> | http_webroot_challenge block. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#id Certificate#id}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.keyType">key_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#key_type Certificate#key_type}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.minDaysDynamic">min_days_dynamic</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#min_days_dynamic Certificate#min_days_dynamic}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.minDaysRemaining">min_days_remaining</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#min_days_remaining Certificate#min_days_remaining}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.mustStaple">must_staple</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#must_staple Certificate#must_staple}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.preCheckDelay">pre_check_delay</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#pre_check_delay Certificate#pre_check_delay}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.preferredChain">preferred_chain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#preferred_chain Certificate#preferred_chain}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#profile Certificate#profile}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.propagationWait">propagation_wait</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#propagation_wait Certificate#propagation_wait}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.recursiveNameservers">recursive_nameservers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#recursive_nameservers Certificate#recursive_nameservers}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.renewalInfoIgnoreRetryAfter">renewal_info_ignore_retry_after</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#renewal_info_ignore_retry_after Certificate#renewal_info_ignore_retry_after}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.renewalInfoMaxSleep">renewal_info_max_sleep</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#renewal_info_max_sleep Certificate#renewal_info_max_sleep}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.revokeCertificateOnDestroy">revoke_certificate_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#revoke_certificate_on_destroy Certificate#revoke_certificate_on_destroy}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.revokeCertificateReason">revoke_certificate_reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#revoke_certificate_reason Certificate#revoke_certificate_reason}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.subjectAlternativeNames">subject_alternative_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#subject_alternative_names Certificate#subject_alternative_names}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#id Certificate#id}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.keyType">key_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#key_type Certificate#key_type}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.minDaysDynamic">min_days_dynamic</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#min_days_dynamic Certificate#min_days_dynamic}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.minDaysRemaining">min_days_remaining</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#min_days_remaining Certificate#min_days_remaining}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.mustStaple">must_staple</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#must_staple Certificate#must_staple}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.preCheckDelay">pre_check_delay</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#pre_check_delay Certificate#pre_check_delay}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.preferredChain">preferred_chain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#preferred_chain Certificate#preferred_chain}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#profile Certificate#profile}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.propagationWait">propagation_wait</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#propagation_wait Certificate#propagation_wait}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.recursiveNameservers">recursive_nameservers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#recursive_nameservers Certificate#recursive_nameservers}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.renewalInfoIgnoreRetryAfter">renewal_info_ignore_retry_after</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#renewal_info_ignore_retry_after Certificate#renewal_info_ignore_retry_after}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.renewalInfoMaxSleep">renewal_info_max_sleep</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#renewal_info_max_sleep Certificate#renewal_info_max_sleep}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.revokeCertificateOnDestroy">revoke_certificate_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#revoke_certificate_on_destroy Certificate#revoke_certificate_on_destroy}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.revokeCertificateReason">revoke_certificate_reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#revoke_certificate_reason Certificate#revoke_certificate_reason}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.subjectAlternativeNames">subject_alternative_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#subject_alternative_names Certificate#subject_alternative_names}. |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.tlsChallenge">tls_challenge</a></code> | <code><a href="#@cdktn/provider-acme.certificate.CertificateTlsChallenge">CertificateTlsChallenge</a></code> | tls_challenge block. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.useRenewalInfo">use_renewal_info</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#use_renewal_info Certificate#use_renewal_info}. |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.validityDays">validity_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#validity_days Certificate#validity_days}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.useRenewalInfo">use_renewal_info</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#use_renewal_info Certificate#use_renewal_info}. |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.validityDays">validity_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#validity_days Certificate#validity_days}. |
 
 ---
 
@@ -162,7 +162,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#account_key_pem Certificate#account_key_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#account_key_pem Certificate#account_key_pem}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#certificate_p12_password Certificate#certificate_p12_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#certificate_p12_password Certificate#certificate_p12_password}.
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#certificate_request_pem Certificate#certificate_request_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#certificate_request_pem Certificate#certificate_request_pem}.
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#cert_timeout Certificate#cert_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#cert_timeout Certificate#cert_timeout}.
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#common_name Certificate#common_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#common_name Certificate#common_name}.
 
 ---
 
@@ -202,15 +202,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#deactivate_authorizations Certificate#deactivate_authorizations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#deactivate_authorizations Certificate#deactivate_authorizations}.
 
 ---
 
-##### `disable_complete_propagation`<sup>Optional</sup> <a name="disable_complete_propagation" id="@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.disableCompletePropagation"></a>
+##### `disable_authoritative_propagation`<sup>Optional</sup> <a name="disable_authoritative_propagation" id="@cdktn/provider-acme.certificate.Certificate.Initializer.parameter.disableAuthoritativePropagation"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#disable_complete_propagation Certificate#disable_complete_propagation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#disable_authoritative_propagation Certificate#disable_authoritative_propagation}.
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 dns_challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#dns_challenge Certificate#dns_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#dns_challenge Certificate#dns_challenge}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 http_challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#http_challenge Certificate#http_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#http_challenge Certificate#http_challenge}
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 http_memcached_challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#http_memcached_challenge Certificate#http_memcached_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#http_memcached_challenge Certificate#http_memcached_challenge}
 
 ---
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 http_s3_challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#http_s3_challenge Certificate#http_s3_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#http_s3_challenge Certificate#http_s3_challenge}
 
 ---
 
@@ -260,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 http_webroot_challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#http_webroot_challenge Certificate#http_webroot_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#http_webroot_challenge Certificate#http_webroot_challenge}
 
 ---
 
@@ -268,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#id Certificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#id Certificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -279,7 +279,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#key_type Certificate#key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#key_type Certificate#key_type}.
 
 ---
 
@@ -287,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#min_days_dynamic Certificate#min_days_dynamic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#min_days_dynamic Certificate#min_days_dynamic}.
 
 ---
 
@@ -295,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#min_days_remaining Certificate#min_days_remaining}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#min_days_remaining Certificate#min_days_remaining}.
 
 ---
 
@@ -303,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#must_staple Certificate#must_staple}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#must_staple Certificate#must_staple}.
 
 ---
 
@@ -311,7 +311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#pre_check_delay Certificate#pre_check_delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#pre_check_delay Certificate#pre_check_delay}.
 
 ---
 
@@ -319,7 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#preferred_chain Certificate#preferred_chain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#preferred_chain Certificate#preferred_chain}.
 
 ---
 
@@ -327,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#profile Certificate#profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#profile Certificate#profile}.
 
 ---
 
@@ -335,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#propagation_wait Certificate#propagation_wait}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#propagation_wait Certificate#propagation_wait}.
 
 ---
 
@@ -343,7 +343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#recursive_nameservers Certificate#recursive_nameservers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#recursive_nameservers Certificate#recursive_nameservers}.
 
 ---
 
@@ -351,7 +351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#renewal_info_ignore_retry_after Certificate#renewal_info_ignore_retry_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#renewal_info_ignore_retry_after Certificate#renewal_info_ignore_retry_after}.
 
 ---
 
@@ -359,7 +359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#renewal_info_max_sleep Certificate#renewal_info_max_sleep}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#renewal_info_max_sleep Certificate#renewal_info_max_sleep}.
 
 ---
 
@@ -367,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#revoke_certificate_on_destroy Certificate#revoke_certificate_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#revoke_certificate_on_destroy Certificate#revoke_certificate_on_destroy}.
 
 ---
 
@@ -375,7 +375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#revoke_certificate_reason Certificate#revoke_certificate_reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#revoke_certificate_reason Certificate#revoke_certificate_reason}.
 
 ---
 
@@ -383,7 +383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#subject_alternative_names Certificate#subject_alternative_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#subject_alternative_names Certificate#subject_alternative_names}.
 
 ---
 
@@ -393,7 +393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 tls_challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#tls_challenge Certificate#tls_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#tls_challenge Certificate#tls_challenge}
 
 ---
 
@@ -401,7 +401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#use_renewal_info Certificate#use_renewal_info}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#use_renewal_info Certificate#use_renewal_info}.
 
 ---
 
@@ -409,7 +409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#validity_days Certificate#validity_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#validity_days Certificate#validity_days}.
 
 ---
 
@@ -452,7 +452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.resetCertTimeout">reset_cert_timeout</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.resetCommonName">reset_common_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.resetDeactivateAuthorizations">reset_deactivate_authorizations</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.resetDisableCompletePropagation">reset_disable_complete_propagation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.resetDisableAuthoritativePropagation">reset_disable_authoritative_propagation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.resetDnsChallenge">reset_dns_challenge</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.resetHttpChallenge">reset_http_challenge</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.resetHttpMemcachedChallenge">reset_http_memcached_challenge</a></code> | *No description.* |
@@ -854,7 +854,7 @@ def put_http_challenge(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#port Certificate#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#port Certificate#port}.
 
 ---
 
@@ -862,7 +862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancl
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#proxy_header Certificate#proxy_header}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#proxy_header Certificate#proxy_header}.
 
 ---
 
@@ -878,7 +878,7 @@ def put_http_memcached_challenge(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#hosts Certificate#hosts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#hosts Certificate#hosts}.
 
 ---
 
@@ -894,7 +894,7 @@ def put_http_s3_challenge(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#s3_bucket Certificate#s3_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#s3_bucket Certificate#s3_bucket}.
 
 ---
 
@@ -910,7 +910,7 @@ def put_http_webroot_challenge(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#directory Certificate#directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#directory Certificate#directory}.
 
 ---
 
@@ -926,7 +926,7 @@ def put_tls_challenge(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#port Certificate#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#port Certificate#port}.
 
 ---
 
@@ -960,10 +960,10 @@ def reset_common_name() -> None
 def reset_deactivate_authorizations() -> None
 ```
 
-##### `reset_disable_complete_propagation` <a name="reset_disable_complete_propagation" id="@cdktn/provider-acme.certificate.Certificate.resetDisableCompletePropagation"></a>
+##### `reset_disable_authoritative_propagation` <a name="reset_disable_authoritative_propagation" id="@cdktn/provider-acme.certificate.Certificate.resetDisableAuthoritativePropagation"></a>
 
 ```python
-def reset_disable_complete_propagation() -> None
+def reset_disable_authoritative_propagation() -> None
 ```
 
 ##### `reset_dns_challenge` <a name="reset_dns_challenge" id="@cdktn/provider-acme.certificate.Certificate.resetDnsChallenge"></a>
@@ -1218,7 +1218,7 @@ The construct id used in the generated config for the Certificate to import.
 
 The id of the existing Certificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1274,7 +1274,7 @@ Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.48
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.certTimeoutInput">cert_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.commonNameInput">common_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.deactivateAuthorizationsInput">deactivate_authorizations_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.disableCompletePropagationInput">disable_complete_propagation_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.disableAuthoritativePropagationInput">disable_authoritative_propagation_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.dnsChallengeInput">dns_challenge_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-acme.certificate.CertificateDnsChallenge">CertificateDnsChallenge</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.httpChallengeInput">http_challenge_input</a></code> | <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpChallenge">CertificateHttpChallenge</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.httpMemcachedChallengeInput">http_memcached_challenge_input</a></code> | <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpMemcachedChallenge">CertificateHttpMemcachedChallenge</a></code> | *No description.* |
@@ -1304,7 +1304,7 @@ Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.48
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.certTimeout">cert_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.commonName">common_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.deactivateAuthorizations">deactivate_authorizations</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.disableCompletePropagation">disable_complete_propagation</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.disableAuthoritativePropagation">disable_authoritative_propagation</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.keyType">key_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.Certificate.property.minDaysDynamic">min_days_dynamic</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -1727,10 +1727,10 @@ deactivate_authorizations_input: bool | IResolvable
 
 ---
 
-##### `disable_complete_propagation_input`<sup>Optional</sup> <a name="disable_complete_propagation_input" id="@cdktn/provider-acme.certificate.Certificate.property.disableCompletePropagationInput"></a>
+##### `disable_authoritative_propagation_input`<sup>Optional</sup> <a name="disable_authoritative_propagation_input" id="@cdktn/provider-acme.certificate.Certificate.property.disableAuthoritativePropagationInput"></a>
 
 ```python
-disable_complete_propagation_input: bool | IResolvable
+disable_authoritative_propagation_input: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
@@ -2027,10 +2027,10 @@ deactivate_authorizations: bool | IResolvable
 
 ---
 
-##### `disable_complete_propagation`<sup>Required</sup> <a name="disable_complete_propagation" id="@cdktn/provider-acme.certificate.Certificate.property.disableCompletePropagation"></a>
+##### `disable_authoritative_propagation`<sup>Required</sup> <a name="disable_authoritative_propagation" id="@cdktn/provider-acme.certificate.Certificate.property.disableAuthoritativePropagation"></a>
 
 ```python
-disable_complete_propagation: bool | IResolvable
+disable_authoritative_propagation: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
@@ -2248,7 +2248,7 @@ certificate.CertificateConfig(
   cert_timeout: typing.Union[int, float] = None,
   common_name: str = None,
   deactivate_authorizations: bool | IResolvable = None,
-  disable_complete_propagation: bool | IResolvable = None,
+  disable_authoritative_propagation: bool | IResolvable = None,
   dns_challenge: IResolvable | typing.List[CertificateDnsChallenge] = None,
   http_challenge: CertificateHttpChallenge = None,
   http_memcached_challenge: CertificateHttpMemcachedChallenge = None,
@@ -2286,36 +2286,36 @@ certificate.CertificateConfig(
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.accountKeyPem">account_key_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#account_key_pem Certificate#account_key_pem}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.certificateP12Password">certificate_p12_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#certificate_p12_password Certificate#certificate_p12_password}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.certificateRequestPem">certificate_request_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#certificate_request_pem Certificate#certificate_request_pem}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.certTimeout">cert_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#cert_timeout Certificate#cert_timeout}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.commonName">common_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#common_name Certificate#common_name}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.deactivateAuthorizations">deactivate_authorizations</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#deactivate_authorizations Certificate#deactivate_authorizations}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.disableCompletePropagation">disable_complete_propagation</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#disable_complete_propagation Certificate#disable_complete_propagation}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.accountKeyPem">account_key_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#account_key_pem Certificate#account_key_pem}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.certificateP12Password">certificate_p12_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#certificate_p12_password Certificate#certificate_p12_password}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.certificateRequestPem">certificate_request_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#certificate_request_pem Certificate#certificate_request_pem}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.certTimeout">cert_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#cert_timeout Certificate#cert_timeout}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.commonName">common_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#common_name Certificate#common_name}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.deactivateAuthorizations">deactivate_authorizations</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#deactivate_authorizations Certificate#deactivate_authorizations}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.disableAuthoritativePropagation">disable_authoritative_propagation</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#disable_authoritative_propagation Certificate#disable_authoritative_propagation}. |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.dnsChallenge">dns_challenge</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-acme.certificate.CertificateDnsChallenge">CertificateDnsChallenge</a>]</code> | dns_challenge block. |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.httpChallenge">http_challenge</a></code> | <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpChallenge">CertificateHttpChallenge</a></code> | http_challenge block. |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.httpMemcachedChallenge">http_memcached_challenge</a></code> | <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpMemcachedChallenge">CertificateHttpMemcachedChallenge</a></code> | http_memcached_challenge block. |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.httpS3Challenge">http_s3_challenge</a></code> | <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpS3Challenge">CertificateHttpS3Challenge</a></code> | http_s3_challenge block. |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.httpWebrootChallenge">http_webroot_challenge</a></code> | <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpWebrootChallenge">CertificateHttpWebrootChallenge</a></code> | http_webroot_challenge block. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#id Certificate#id}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.keyType">key_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#key_type Certificate#key_type}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.minDaysDynamic">min_days_dynamic</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#min_days_dynamic Certificate#min_days_dynamic}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.minDaysRemaining">min_days_remaining</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#min_days_remaining Certificate#min_days_remaining}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.mustStaple">must_staple</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#must_staple Certificate#must_staple}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.preCheckDelay">pre_check_delay</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#pre_check_delay Certificate#pre_check_delay}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.preferredChain">preferred_chain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#preferred_chain Certificate#preferred_chain}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#profile Certificate#profile}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.propagationWait">propagation_wait</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#propagation_wait Certificate#propagation_wait}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.recursiveNameservers">recursive_nameservers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#recursive_nameservers Certificate#recursive_nameservers}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.renewalInfoIgnoreRetryAfter">renewal_info_ignore_retry_after</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#renewal_info_ignore_retry_after Certificate#renewal_info_ignore_retry_after}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.renewalInfoMaxSleep">renewal_info_max_sleep</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#renewal_info_max_sleep Certificate#renewal_info_max_sleep}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.revokeCertificateOnDestroy">revoke_certificate_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#revoke_certificate_on_destroy Certificate#revoke_certificate_on_destroy}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.revokeCertificateReason">revoke_certificate_reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#revoke_certificate_reason Certificate#revoke_certificate_reason}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.subjectAlternativeNames">subject_alternative_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#subject_alternative_names Certificate#subject_alternative_names}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#id Certificate#id}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.keyType">key_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#key_type Certificate#key_type}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.minDaysDynamic">min_days_dynamic</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#min_days_dynamic Certificate#min_days_dynamic}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.minDaysRemaining">min_days_remaining</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#min_days_remaining Certificate#min_days_remaining}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.mustStaple">must_staple</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#must_staple Certificate#must_staple}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.preCheckDelay">pre_check_delay</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#pre_check_delay Certificate#pre_check_delay}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.preferredChain">preferred_chain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#preferred_chain Certificate#preferred_chain}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#profile Certificate#profile}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.propagationWait">propagation_wait</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#propagation_wait Certificate#propagation_wait}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.recursiveNameservers">recursive_nameservers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#recursive_nameservers Certificate#recursive_nameservers}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.renewalInfoIgnoreRetryAfter">renewal_info_ignore_retry_after</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#renewal_info_ignore_retry_after Certificate#renewal_info_ignore_retry_after}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.renewalInfoMaxSleep">renewal_info_max_sleep</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#renewal_info_max_sleep Certificate#renewal_info_max_sleep}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.revokeCertificateOnDestroy">revoke_certificate_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#revoke_certificate_on_destroy Certificate#revoke_certificate_on_destroy}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.revokeCertificateReason">revoke_certificate_reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#revoke_certificate_reason Certificate#revoke_certificate_reason}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.subjectAlternativeNames">subject_alternative_names</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#subject_alternative_names Certificate#subject_alternative_names}. |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.tlsChallenge">tls_challenge</a></code> | <code><a href="#@cdktn/provider-acme.certificate.CertificateTlsChallenge">CertificateTlsChallenge</a></code> | tls_challenge block. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.useRenewalInfo">use_renewal_info</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#use_renewal_info Certificate#use_renewal_info}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.validityDays">validity_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#validity_days Certificate#validity_days}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.useRenewalInfo">use_renewal_info</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#use_renewal_info Certificate#use_renewal_info}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateConfig.property.validityDays">validity_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#validity_days Certificate#validity_days}. |
 
 ---
 
@@ -2397,7 +2397,7 @@ account_key_pem: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#account_key_pem Certificate#account_key_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#account_key_pem Certificate#account_key_pem}.
 
 ---
 
@@ -2409,7 +2409,7 @@ certificate_p12_password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#certificate_p12_password Certificate#certificate_p12_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#certificate_p12_password Certificate#certificate_p12_password}.
 
 ---
 
@@ -2421,7 +2421,7 @@ certificate_request_pem: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#certificate_request_pem Certificate#certificate_request_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#certificate_request_pem Certificate#certificate_request_pem}.
 
 ---
 
@@ -2433,7 +2433,7 @@ cert_timeout: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#cert_timeout Certificate#cert_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#cert_timeout Certificate#cert_timeout}.
 
 ---
 
@@ -2445,7 +2445,7 @@ common_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#common_name Certificate#common_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#common_name Certificate#common_name}.
 
 ---
 
@@ -2457,19 +2457,19 @@ deactivate_authorizations: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#deactivate_authorizations Certificate#deactivate_authorizations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#deactivate_authorizations Certificate#deactivate_authorizations}.
 
 ---
 
-##### `disable_complete_propagation`<sup>Optional</sup> <a name="disable_complete_propagation" id="@cdktn/provider-acme.certificate.CertificateConfig.property.disableCompletePropagation"></a>
+##### `disable_authoritative_propagation`<sup>Optional</sup> <a name="disable_authoritative_propagation" id="@cdktn/provider-acme.certificate.CertificateConfig.property.disableAuthoritativePropagation"></a>
 
 ```python
-disable_complete_propagation: bool | IResolvable
+disable_authoritative_propagation: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#disable_complete_propagation Certificate#disable_complete_propagation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#disable_authoritative_propagation Certificate#disable_authoritative_propagation}.
 
 ---
 
@@ -2483,7 +2483,7 @@ dns_challenge: IResolvable | typing.List[CertificateDnsChallenge]
 
 dns_challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#dns_challenge Certificate#dns_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#dns_challenge Certificate#dns_challenge}
 
 ---
 
@@ -2497,7 +2497,7 @@ http_challenge: CertificateHttpChallenge
 
 http_challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#http_challenge Certificate#http_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#http_challenge Certificate#http_challenge}
 
 ---
 
@@ -2511,7 +2511,7 @@ http_memcached_challenge: CertificateHttpMemcachedChallenge
 
 http_memcached_challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#http_memcached_challenge Certificate#http_memcached_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#http_memcached_challenge Certificate#http_memcached_challenge}
 
 ---
 
@@ -2525,7 +2525,7 @@ http_s3_challenge: CertificateHttpS3Challenge
 
 http_s3_challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#http_s3_challenge Certificate#http_s3_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#http_s3_challenge Certificate#http_s3_challenge}
 
 ---
 
@@ -2539,7 +2539,7 @@ http_webroot_challenge: CertificateHttpWebrootChallenge
 
 http_webroot_challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#http_webroot_challenge Certificate#http_webroot_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#http_webroot_challenge Certificate#http_webroot_challenge}
 
 ---
 
@@ -2551,7 +2551,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#id Certificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#id Certificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2566,7 +2566,7 @@ key_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#key_type Certificate#key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#key_type Certificate#key_type}.
 
 ---
 
@@ -2578,7 +2578,7 @@ min_days_dynamic: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#min_days_dynamic Certificate#min_days_dynamic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#min_days_dynamic Certificate#min_days_dynamic}.
 
 ---
 
@@ -2590,7 +2590,7 @@ min_days_remaining: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#min_days_remaining Certificate#min_days_remaining}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#min_days_remaining Certificate#min_days_remaining}.
 
 ---
 
@@ -2602,7 +2602,7 @@ must_staple: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#must_staple Certificate#must_staple}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#must_staple Certificate#must_staple}.
 
 ---
 
@@ -2614,7 +2614,7 @@ pre_check_delay: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#pre_check_delay Certificate#pre_check_delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#pre_check_delay Certificate#pre_check_delay}.
 
 ---
 
@@ -2626,7 +2626,7 @@ preferred_chain: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#preferred_chain Certificate#preferred_chain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#preferred_chain Certificate#preferred_chain}.
 
 ---
 
@@ -2638,7 +2638,7 @@ profile: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#profile Certificate#profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#profile Certificate#profile}.
 
 ---
 
@@ -2650,7 +2650,7 @@ propagation_wait: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#propagation_wait Certificate#propagation_wait}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#propagation_wait Certificate#propagation_wait}.
 
 ---
 
@@ -2662,7 +2662,7 @@ recursive_nameservers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#recursive_nameservers Certificate#recursive_nameservers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#recursive_nameservers Certificate#recursive_nameservers}.
 
 ---
 
@@ -2674,7 +2674,7 @@ renewal_info_ignore_retry_after: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#renewal_info_ignore_retry_after Certificate#renewal_info_ignore_retry_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#renewal_info_ignore_retry_after Certificate#renewal_info_ignore_retry_after}.
 
 ---
 
@@ -2686,7 +2686,7 @@ renewal_info_max_sleep: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#renewal_info_max_sleep Certificate#renewal_info_max_sleep}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#renewal_info_max_sleep Certificate#renewal_info_max_sleep}.
 
 ---
 
@@ -2698,7 +2698,7 @@ revoke_certificate_on_destroy: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#revoke_certificate_on_destroy Certificate#revoke_certificate_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#revoke_certificate_on_destroy Certificate#revoke_certificate_on_destroy}.
 
 ---
 
@@ -2710,7 +2710,7 @@ revoke_certificate_reason: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#revoke_certificate_reason Certificate#revoke_certificate_reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#revoke_certificate_reason Certificate#revoke_certificate_reason}.
 
 ---
 
@@ -2722,7 +2722,7 @@ subject_alternative_names: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#subject_alternative_names Certificate#subject_alternative_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#subject_alternative_names Certificate#subject_alternative_names}.
 
 ---
 
@@ -2736,7 +2736,7 @@ tls_challenge: CertificateTlsChallenge
 
 tls_challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#tls_challenge Certificate#tls_challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#tls_challenge Certificate#tls_challenge}
 
 ---
 
@@ -2748,7 +2748,7 @@ use_renewal_info: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#use_renewal_info Certificate#use_renewal_info}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#use_renewal_info Certificate#use_renewal_info}.
 
 ---
 
@@ -2760,7 +2760,7 @@ validity_days: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#validity_days Certificate#validity_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#validity_days Certificate#validity_days}.
 
 ---
 
@@ -2773,7 +2773,8 @@ from cdktn_provider_acme import certificate
 
 certificate.CertificateDnsChallenge(
   provider: str,
-  config: typing.Mapping[str] = None
+  config: typing.Mapping[str] = None,
+  match_domains: typing.List[str] = None
 )
 ```
 
@@ -2781,8 +2782,9 @@ certificate.CertificateDnsChallenge(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallenge.property.provider">provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#provider Certificate#provider}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallenge.property.config">config</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#config Certificate#config}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallenge.property.provider">provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#provider Certificate#provider}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallenge.property.config">config</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#config Certificate#config}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallenge.property.matchDomains">match_domains</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#match_domains Certificate#match_domains}. |
 
 ---
 
@@ -2794,7 +2796,7 @@ provider: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#provider Certificate#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#provider Certificate#provider}.
 
 ---
 
@@ -2806,7 +2808,19 @@ config: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#config Certificate#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#config Certificate#config}.
+
+---
+
+##### `match_domains`<sup>Optional</sup> <a name="match_domains" id="@cdktn/provider-acme.certificate.CertificateDnsChallenge.property.matchDomains"></a>
+
+```python
+match_domains: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#match_domains Certificate#match_domains}.
 
 ---
 
@@ -2827,8 +2841,8 @@ certificate.CertificateHttpChallenge(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpChallenge.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#port Certificate#port}. |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpChallenge.property.proxyHeader">proxy_header</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#proxy_header Certificate#proxy_header}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpChallenge.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#port Certificate#port}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpChallenge.property.proxyHeader">proxy_header</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#proxy_header Certificate#proxy_header}. |
 
 ---
 
@@ -2840,7 +2854,7 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#port Certificate#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#port Certificate#port}.
 
 ---
 
@@ -2852,7 +2866,7 @@ proxy_header: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#proxy_header Certificate#proxy_header}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#proxy_header Certificate#proxy_header}.
 
 ---
 
@@ -2872,7 +2886,7 @@ certificate.CertificateHttpMemcachedChallenge(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpMemcachedChallenge.property.hosts">hosts</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#hosts Certificate#hosts}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpMemcachedChallenge.property.hosts">hosts</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#hosts Certificate#hosts}. |
 
 ---
 
@@ -2884,7 +2898,7 @@ hosts: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#hosts Certificate#hosts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#hosts Certificate#hosts}.
 
 ---
 
@@ -2904,7 +2918,7 @@ certificate.CertificateHttpS3Challenge(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpS3Challenge.property.s3Bucket">s3_bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#s3_bucket Certificate#s3_bucket}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpS3Challenge.property.s3Bucket">s3_bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#s3_bucket Certificate#s3_bucket}. |
 
 ---
 
@@ -2916,7 +2930,7 @@ s3_bucket: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#s3_bucket Certificate#s3_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#s3_bucket Certificate#s3_bucket}.
 
 ---
 
@@ -2936,7 +2950,7 @@ certificate.CertificateHttpWebrootChallenge(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpWebrootChallenge.property.directory">directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#directory Certificate#directory}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateHttpWebrootChallenge.property.directory">directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#directory Certificate#directory}. |
 
 ---
 
@@ -2948,7 +2962,7 @@ directory: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#directory Certificate#directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#directory Certificate#directory}.
 
 ---
 
@@ -2968,7 +2982,7 @@ certificate.CertificateTlsChallenge(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-acme.certificate.CertificateTlsChallenge.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#port Certificate#port}. |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateTlsChallenge.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#port Certificate#port}. |
 
 ---
 
@@ -2980,7 +2994,7 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs/resources/certificate#port Certificate#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs/resources/certificate#port Certificate#port}.
 
 ---
 
@@ -3230,6 +3244,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.resetConfig">reset_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.resetMatchDomains">reset_match_domains</a></code> | *No description.* |
 
 ---
 
@@ -3411,6 +3426,12 @@ Returns a reversible string representation.
 def reset_config() -> None
 ```
 
+##### `reset_match_domains` <a name="reset_match_domains" id="@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.resetMatchDomains"></a>
+
+```python
+def reset_match_domains() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3419,8 +3440,10 @@ def reset_config() -> None
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.property.configInput">config_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.property.matchDomainsInput">match_domains_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.property.providerInput">provider_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.property.config">config</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.property.matchDomains">match_domains</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.property.provider">provider</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-acme.certificate.CertificateDnsChallenge">CertificateDnsChallenge</a></code> | *No description.* |
 
@@ -3460,6 +3483,16 @@ config_input: typing.Mapping[str]
 
 ---
 
+##### `match_domains_input`<sup>Optional</sup> <a name="match_domains_input" id="@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.property.matchDomainsInput"></a>
+
+```python
+match_domains_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `provider_input`<sup>Optional</sup> <a name="provider_input" id="@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.property.providerInput"></a>
 
 ```python
@@ -3477,6 +3510,16 @@ config: typing.Mapping[str]
 ```
 
 - *Type:* typing.Mapping[str]
+
+---
+
+##### `match_domains`<sup>Required</sup> <a name="match_domains" id="@cdktn/provider-acme.certificate.CertificateDnsChallengeOutputReference.property.matchDomains"></a>
+
+```python
+match_domains: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 

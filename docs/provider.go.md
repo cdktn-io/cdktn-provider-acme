@@ -4,12 +4,12 @@
 
 ### AcmeProvider <a name="AcmeProvider" id="@cdktn/provider-acme.provider.AcmeProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs acme}.
+Represents a {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs acme}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-acme.provider.AcmeProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v16/provider"
 
 provider.NewAcmeProvider(scope Construct, id *string, config AcmeProviderConfig) AcmeProvider
 ```
@@ -173,7 +173,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-acme.provider.AcmeProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v16/provider"
 
 provider.AcmeProvider_IsConstruct(x interface{}) *bool
 ```
@@ -205,7 +205,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-acme.provider.AcmeProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v16/provider"
 
 provider.AcmeProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -219,7 +219,7 @@ provider.AcmeProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktn/provider-acme.provider.AcmeProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v16/provider"
 
 provider.AcmeProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -233,7 +233,7 @@ provider.AcmeProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-acme.provider.AcmeProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v16/provider"
 
 provider.AcmeProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -262,7 +262,7 @@ The construct id used in the generated config for the AcmeProvider to import.
 
 The id of the existing AcmeProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -440,7 +440,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-acme.provider.AcmeProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v16/provider"
 
 &provider.AcmeProviderConfig {
 	ServerUrl: *string,
@@ -452,7 +452,7 @@ import "github.com/cdktn-io/cdktn-provider-acme-go/acme/v15/provider"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-acme.provider.AcmeProviderConfig.property.serverUrl">ServerUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs#server_url AcmeProvider#server_url}. |
+| <code><a href="#@cdktn/provider-acme.provider.AcmeProviderConfig.property.serverUrl">ServerUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs#server_url AcmeProvider#server_url}. |
 | <code><a href="#@cdktn/provider-acme.provider.AcmeProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
 
 ---
@@ -465,7 +465,7 @@ ServerUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs#server_url AcmeProvider#server_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs#server_url AcmeProvider#server_url}.
 
 ---
 
@@ -479,7 +479,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/2.48.3/docs#alias AcmeProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vancluever/acme/3.2.1/docs#alias AcmeProvider#alias}
 
 ---
 
