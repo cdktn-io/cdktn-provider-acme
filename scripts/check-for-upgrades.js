@@ -12,7 +12,7 @@ const semver = require("semver");
 // const { versionMatchesConstraint } = require('cdktn-cli/lib/dependencies/version-constraints');
 
 // set by the projen file that generates this script
-const CONSTRAINT = "~> 2.10";
+const CONSTRAINT = "~> 3.0";
 const FQ_PROVIDER_NAME = "vancluever/acme";
 
 (async function main() {
